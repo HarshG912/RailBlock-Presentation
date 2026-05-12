@@ -19,15 +19,18 @@
 
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <img src="https://jazfysafnhxztgnphfqv.supabase.co/storage/v1/object/public/Assets/RailBlock.ico" alt="RailBlock Icon">
+            <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="https://jazfysafnhxztgnphfqv.supabase.co/storage/v1/object/public/Assets/RailBlock.ico" alt="RailBlock Icon" style="width: 32px; height: 32px;">
                 <span>RailBlock Control</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#rolling">Rolling Block</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#impact">Impact</a></li>
+                <li><a href="#rolling">Rolling Block</a></li> <!-- Added Link -->
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#features">Key Features</a></li>
+                <li><a href="#pros-cons">Pros & Cons</a></li>
+                <li><a href="#impact">ROI & Safety</a></li>
+                <li><a href="#plan">Implementation</a></li>
                 <li><a href="#roles">Modules</a></li>
                 <li><a href="#demo">Demo</a></li>
             </ul>
@@ -38,11 +41,13 @@
         <section id="home" class="hero">
             <div class="container hero-container">
                 <div class="hero-content reveal">
-                    <div class="badge">Next-Gen Railway Management</div>
+                    <div class="badge">Hybrid Planning & Execution</div>
                     <h1>Digitalizing Railway<br><span class="text-gradient">Block Management</span></h1>
-                    <p class="hero-subtitle">A secure, real-time hybrid system for coordinating immediate track protection (Live) and advanced maintenance planning (Rolling).</p>
+                    <p class="hero-subtitle">A dual-mode system designed for immediate track protection (Live) and advanced maintenance sanctioning (Rolling).</p>
+                    <p class="hero-mission">A step forward in <strong>DIGITAL INDIA</strong> & <strong>MAKE IN INDIA</strong> missions.</p>
+                    <p class="hero-author">By <strong>Harshavardhan A. Godse (TPC/BLP)</strong></p>
                     <div class="hero-actions">
-                        <a href="#rolling" class="btn btn-primary">Explore Rolling Blocks</a>
+                        <a href="#rolling" class="btn btn-primary">Rolling Block Plans</a> <!-- Added Link -->
                         <a href="#roles" class="btn btn-secondary">View Modules</a>
                     </div>
                 </div>
@@ -67,8 +72,8 @@
                             <div class="block-list">
                                 <div class="block-item active">
                                     <div class="block-info">
-                                        <span class="block-id">LIVE-9021</span>
-                                        <span class="block-desc">Emergency S&T Repair</span>
+                                        <span class="block-id">LIVE-8021</span>
+                                        <span class="block-desc">Emergency S&T</span>
                                     </div>
                                     <span class="status-badge status-active">Active</span>
                                 </div>
@@ -86,124 +91,387 @@
             </div>
         </section>
 
-        <!-- Rolling Block Section -->
-        <section id="rolling" class="problem-solution">
+        <!-- New Section: Rolling Block -->
+        <section id="rolling" class="problem-solution" style="background: rgba(255, 255, 255, 0.02);">
             <div class="container">
                 <div class="section-header reveal">
                     <h2>Future-Dated <span class="text-gradient">Rolling Blocks</span></h2>
-                    <p>Transition from reactive requests to proactive long-term planning.</p>
+                    <p>Moving from short-term reactive requests to structured long-term planning.</p>
                 </div>
+                
                 <div class="comparison-grid">
-                    <div class="comparison-card legacy reveal-left">
-                        <h3>Future Initiation</h3>
-                        <p>Any authorized staff can initiate block requirements for future dates, providing precise details for scheduled maintenance.</p>
+                    <div class="comparison-card legacy reveal-left" style="border-color: var(--primary);">
+                         <div class="card-icon" style="background: rgba(59, 130, 246, 0.1); color: var(--primary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                        </div>
+                        <h3>Rolling Block Plan</h3>
+                        <ul class="feature-list success">
+                            <li>Staff initiates future requirements</li>
+                            <li>Multi-level forwarding workflow</li>
+                            <li>Advanced Officer sanctioning</li>
+                            <li>Resource & traffic forecasting</li>
+                            <li>Automated reminders for planned dates</li>
+                        </ul>
                     </div>
+                    
                     <div class="comparison-card modern reveal-right">
-                        <h3>Forwarding & Sanction</h3>
-                        <p>A streamlined workflow to forward requirements to higher authorities for final sanction, ensuring all stakeholders are aligned.</p>
+                         <div class="card-icon" style="background: rgba(34, 197, 94, 0.1); color: var(--success);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h3>Live Execution</h3>
+                        <ul class="feature-list success">
+                            <li>Instant track protection</li>
+                            <li>Real-time progress monitoring</li>
+                            <li>Direct digital block exchange</li>
+                            <li>Automatic log generation</li>
+                            <li>Emergency release protocols</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Grid (Fixed Alignment) -->
+        <section id="problem" class="problem-solution">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>The Evolution of <span class="text-gradient">Block Availing</span></h2>
+                    <p>Moving from manual vulnerabilities to digital certainty.</p>
+                </div>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-card legacy reveal-left">
+                        <div class="card-icon legacy-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+                        </div>
+                        <h3>Legacy Paper Process</h3>
+                        <ul class="feature-list error">
+                            <li>Lack of accountability in manual processes</li>
+                            <li>Unavailability of historical logs for audits</li>
+                            <li>Inconvenience in supervision (station visits required)</li>
+                            <li>Ambiguity in verbal communication protocols</li>
+                            <li>Inconsistencies in repeating block details</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comparison-card modern reveal-right">
+                        <div class="card-icon modern-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h3>RailBlock Control</h3>
+                        <ul class="feature-list success">
+                            <li>Complete logs of each activity of each person</li>
+                            <li>Real-time progress tracking during block closing</li>
+                            <li>Supervisors can avail blocks while at the field</li>
+                            <li>Fully digital process eliminates verbal ambiguity</li>
+                            <li>Standardized flow for block sanctioning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="features" class="features">
             <div class="container">
                 <div class="section-header reveal">
                     <h2>Enterprise-Grade <span class="text-gradient">Features</span></h2>
-                    <p>Designed for the rigorous demands of modern railway operations.</p>
+                    <p>Designed specifically for the rigorous demands of railway operations.</p>
                 </div>
+
                 <div class="features-grid">
-                    <div class="feature-card reveal glass-panel"><h3>Real-Time Sync</h3><p>Instant updates across all terminals via Supabase Realtime.</p></div>
-                    <div class="feature-card reveal glass-panel"><h3>Push Notifications</h3><p>Alerts for block approvals, rejections, and state changes.</p></div>
-                    <div class="feature-card reveal glass-panel"><h3>Robust Security</h3><p>Role-based access control and secure edge functions.</p></div>
-                    <div class="feature-card reveal glass-panel"><h3>Multi-Role Ecosystem</h3><p>Dashboards tailored to Supervisors, Controllers, and SMs.</p></div>
+                    <div class="feature-card reveal glass-panel">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <h3>Real-Time Synchronization</h3>
+                        <p>Live block status updates broadcasted instantly to all stakeholders via Supabase Realtime infrastructure.</p>
+                    </div>
+
+                    <div class="feature-card reveal glass-panel" style="transition-delay: 0.1s">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg>
+                        </div>
+                        <h3>Push Notifications</h3>
+                        <p>Instant Web Push API alerts for block approvals, rejections, and critical state changes, keeping teams informed.</p>
+                    </div>
+
+                    <div class="feature-card reveal glass-panel" style="transition-delay: 0.2s">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                        </div>
+                        <h3>Robust Security</h3>
+                        <p>Enterprise-grade security using advanced authentication, secure Edge Functions, and rigorous role-based access control.</p>
+                    </div>
+
+                    <div class="feature-card reveal glass-panel" style="transition-delay: 0.3s">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18.5 15.5 3 3-3 3"/><path d="m5.5 15.5-3 3 3 3"/><path d="M8.5 8.5 12 5l3.5 3.5"/><path d="M12 5v16"/><path d="M2.5 18.5h19"/></svg>
+                        </div>
+                        <h3>Multi-Role Ecosystem</h3>
+                        <p>Specialized dashboards and interfaces tailored to the distinct workflows of Supervisors, Controllers, and Station Masters.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ROI Section (Fixed Alignment) -->
+        <section id="pros-cons" class="pros-cons">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Strategic <span class="text-gradient">Evaluation</span></h2>
+                    <p>A balanced view of the RailBlock impact.</p>
+                </div>
+                <div class="pros-cons-grid reveal">
+                    <div class="pros-card glass-panel">
+                        <h3>Pros</h3>
+                        <ul class="feature-list success">
+                            <li>Increased accountability through digital tracking</li>
+                            <li>Immediate availability of searchable logs</li>
+                            <li>Real-time operational visibility across the zone</li>
+                            <li>Enhanced safety by eliminating verbal ambiguity</li>
+                            <li>Elimination of inconsistencies in block repeating</li>
+                        </ul>
+                    </div>
+                    <div class="cons-card glass-panel">
+                        <h3>Cons</h3>
+                        <ul class="feature-list warning">
+                            <li>Digital literacy requirements for non-tech staff</li>
+                            <li>Dependency on network connectivity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="impact" class="impact">
             <div class="container">
                 <div class="section-header reveal">
                     <h2>ROI & <span class="text-gradient">Safety Impact</span></h2>
+                    <p>Tangible benefits for modern railway operations.</p>
                 </div>
                 <div class="impact-grid">
-                    <div class="impact-card reveal glass-panel"><h3>Man-Hour Savings</h3><p>Reduction in verbal verification and manual logs.</p></div>
-                    <div class="impact-card reveal glass-panel"><h3>Safety Assurance</h3><p>100% reduction in verbal miscommunication failures.</p></div>
-                    <div class="impact-card reveal glass-panel"><h3>Cost Efficiency</h3><p>Elimination of paperwork and physical storage costs.</p></div>
-                    <div class="impact-card reveal glass-panel"><h3>Sustainability</h3><p>Paperless operations leading to a zero-waste workflow.</p></div>
+                    <div class="impact-card reveal glass-panel">
+                        <div class="impact-icon">⏱️</div>
+                        <h3>Man-Hour Savings</h3>
+                        <p>Significant reduction in time spent on verbal verification and manual log entries.</p>
+                    </div>
+                    <div class="impact-card reveal glass-panel" style="transition-delay: 0.1s">
+                        <div class="impact-icon">🛡️</div>
+                        <h3>Safety Assurance</h3>
+                        <p>100% reduction in failures caused by verbal miscommunications and manual errors.</p>
+                    </div>
+                    <div class="impact-card reveal glass-panel" style="transition-delay: 0.2s">
+                        <div class="impact-icon">💰</div>
+                        <h3>Cost Efficiency</h3>
+                        <p>Reduction in recurring costs for stationary, paperwork, and physical storage.</p>
+                    </div>
+                    <div class="impact-card reveal glass-panel" style="transition-delay: 0.3s">
+                        <div class="impact-icon">🌱</div>
+                        <h3>Sustainability</h3>
+                        <p>Paperless operations leading to a reduced carbon footprint and waste reduction.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- User Modules -->
+        <section id="plan" class="implementation">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Implementation <span class="text-gradient">Plan</span></h2>
+                    <p>A phased approach to digital transformation.</p>
+                </div>
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content glass-panel">
+                            <h3>Pilot Phase</h3>
+                            <p>15-day parallel run with the existing system to evaluate performance and reliability.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content glass-panel">
+                            <h3>Refinement</h3>
+                            <p>Addressing and fixing all issues raised by stakeholders during the pilot run.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content glass-panel">
+                            <h3>Transition</h3>
+                            <p>Brief period of solo implementation to analyze behavior and system stability.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content glass-panel">
+                            <h3>Full Deployment</h3>
+                            <p>Comprehensive staff training and zone-wide rollout based on pilot insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="roles" class="roles">
             <div class="container">
                 <div class="section-header reveal">
                     <h2>Comprehensive <span class="text-gradient">User Modules</span></h2>
+                    <p>A unified platform that adapts to every level of authority.</p>
                 </div>
+
                 <div class="roles-showcase">
                     <div class="role-tabs reveal">
-                        <button class="role-tab active" data-target="admin">Admin</button>
+                        <button class="role-tab active" data-target="admin">Zone Admin</button>
                         <button class="role-tab" data-target="officer">Officer</button>
                         <button class="role-tab" data-target="cabin">Cabin Holders</button>
                         <button class="role-tab" data-target="field">Field View</button>
                     </div>
+
                     <div class="role-content-container reveal glass-panel">
                         <div class="role-content active" id="admin">
-                            <h3>Zone Admin</h3>
-                            <ul>
-                                <li>Manage user accounts, roles, and permissions.</li>
-                                <li>Configure stations, cabins, and track sections.</li>
-                            </ul>
+                            <div class="role-details">
+                                <h3>Zone Admin Dashboard</h3>
+                                <p>Complete system oversight and configuration interface.</p>
+                                <ul>
+                                    <li>Manage user accounts, roles, and permissions across the zone.</li>
+                                    <li>Configure stations, cabins, and track sections.</li>
+                                    <li>Set Rolling Block planning windows and forwarding rules.</li>
+                                </ul>
+                            </div>
+                            <div class="role-visual">
+                                <div class="mock-ui">
+                                    <div class="mock-header">Zone Administration</div>
+                                    <div class="mock-grid">
+                                        <div class="mock-card w-full">System Overview</div>
+                                        <div class="mock-card">User Management (142 Active)</div>
+                                        <div class="mock-card">Station Config (48 Nodes)</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="role-content" id="officer">
-                            <h3>Officer / Controller</h3>
-                            <ul>
-                                <li>Review and sanction Rolling Block requirements for future dates.</li>
-                                <li>Approve or reject Live block requests in real-time.</li>
-                                <li>Check progress reports to analyze efficiency and productivity.</li>
-                            </ul>
+                            <div class="role-details">
+                                <h3>Officer Dashboard</h3>
+                                <p>The central command for block approval and coordination.</p>
+                                <ul>
+                                    <li>Sanction Rolling Block requirements for future dates.</li>
+                                    <li>Review, approve, or reject Live block requests in real-time.</li>
+                                    <li>Monitor active blocks and resource allocation.</li>
+                                    <li>Analyze efficiency through digital progress reports.</li>
+                                </ul>
+                            </div>
+                            <div class="role-visual">
+                                <div class="mock-ui officer-theme">
+                                    <div class="mock-header">Control Room</div>
+                                    <div class="mock-list">
+                                        <div class="mock-list-item">Pending Rolling: ROLL-4052</div>
+                                        <div class="mock-list-item">Active Live: STN-A to STN-B</div>
+                                        <div class="mock-list-item">Completed: Weekly Planning</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="role-content" id="cabin">
-                            <h3>Cabin Holders (Controller & SM)</h3>
-                            <ul>
-                                <li>Acknowledge approvals and confirm field readiness.</li>
-                                <li>Provide extension to approved blocks.</li>
-                                <li>Reject block with appropriate reason.</li>
-                                <li>Check the Block details thoroughly.</li>
-                            </ul>
+                            <div class="role-details">
+                                <h3>Cabin Holders Interface</h3>
+                                <p>Streamlined execution point for local operations.</p>
+                                <ul>
+                                    <li>View and verify upcoming Sanctioned Rolling Blocks.</li>
+                                    <li>Execute Live block exchange and confirm readiness.</li>
+                                    <li>Manage extensions and rejection logs locally.</li>
+                                    <li>Check Block details and communicate normalization.</li>
+                                </ul>
+                            </div>
+                            <div class="role-visual">
+                                <div class="mock-ui cabin-theme">
+                                    <div class="mock-header">Cabin Control - Station A</div>
+                                    <div class="mock-button-grid">
+                                        <div class="mock-btn primary">Live Exchange</div>
+                                        <div class="mock-btn secondary">Rolling Schedule</div>
+                                        <div class="mock-btn alert">Emergency</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="role-content" id="field">
-                            <h3>Field View (Supervisors)</h3>
-                            <ul>
-                                <li>Initiate Rolling Block requirements for future dates.</li>
-                                <li>Initiate immediate Live block requests with track details.</li>
-                                <li>Verify approvals before commencing work.</li>
-                            </ul>
+                            <div class="role-details">
+                                <h3>Field View</h3>
+                                <p>On-ground visibility for maintenance staff and engineers.</p>
+                                <ul>
+                                    <li>Initiate Rolling Block requirements for future dates.</li>
+                                    <li>Forward plans to higher authorities for sanction.</li>
+                                    <li>Initiate immediate Live block requests from the field.</li>
+                                    <li>Verify block approvals and secure digital work permits.</li>
+                                </ul>
+                            </div>
+                            <div class="role-visual">
+                                <div class="mock-ui field-theme mobile-frame">
+                                    <div class="mock-header">Field Operations</div>
+                                    <div class="mock-status-large safe">SANCTIONED</div>
+                                    <div class="mock-text-small">Future Plan: 15/05/2026</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Demo Section -->
+        <section id="tech" class="tech-stack">
+            <div class="container">
+                <div class="tech-card glass-panel reveal">
+                    <div class="tech-content">
+                        <h2>Powered by Modern <br><span class="text-gradient">Architecture</span></h2>
+                        <p>RailBlock Control is built on a resilient, high-performance technology stack ensuring 99.9% uptime and immediate data consistency.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React 18</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Supabase PostgreSQL</span>
+                            <span class="tech-tag">Realtime Edge Functions</span>
+                            <span class="tech-tag">Web Push API</span>
+                        </div>
+                    </div>
+                    <div class="tech-graphic">
+                        <div class="pulse-ring"></div>
+                        <div class="server-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="demo" class="video-demo">
             <div class="container">
                 <div class="section-header reveal">
                     <h2>Application <span class="text-gradient">Walkthrough</span></h2>
+                    <p>Watch a detailed presentation of how the system coordinates operations in real-time.</p>
                 </div>
-                <div class="video-wrapper glass-panel reveal">
-                    <iframe src="https://www.youtube.com/embed/YpDGYdTD6Pc" frameborder="0" allowfullscreen></iframe>
+                <div class="glass-panel reveal" style="max-width: 850px; margin: 0 auto; padding: 24px; border-radius: 16px;">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.4);">
+                        <iframe 
+                            src="https://www.youtube.com/embed/YpDGYdTD6Pc" 
+                            title="RailBlock Control Explainer Video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Railway Block Management System. Proprietary and Confidential.</p>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <div class="logo-icon small"></div>
+                <span>RailBlock Control</span>
+            </div>
+            <p class="copyright">&copy; 2026 Railway Block Management System. Proprietary and Confidential.</p>
         </div>
     </footer>
 
