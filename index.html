@@ -19,8 +19,8 @@
 
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <div class="logo-icon"></div>
+            <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="https://jazfysafnhxztgnphfqv.supabase.co/storage/v1/object/public/Assets/RailBlock.ico" alt="RailBlock Icon" style="width: 32px; height: 32px; data-import="true"">
                 <span>RailBlock Control</span>
             </div>
             <ul class="nav-links">
@@ -279,8 +279,8 @@
                 <div class="roles-showcase">
                     <div class="role-tabs reveal">
                         <button class="role-tab active" data-target="admin">Zone Admin</button>
-                        <button class="role-tab" data-target="officer">Officer (Controller)</button>
-                        <button class="role-tab" data-target="cabin">Cabin (Station Master)</button>
+                        <button class="role-tab" data-target="officer">Officer</button>
+                        <button class="role-tab" data-target="cabin">Cabin Holders (Controller & Station Master)</button>
                         <button class="role-tab" data-target="field">Field View</button>
                     </div>
 
@@ -292,8 +292,6 @@
                                 <ul>
                                     <li>Manage user accounts, roles, and permissions across the zone.</li>
                                     <li>Configure stations, cabins, and track sections.</li>
-                                    <li>Access global system audits and compliance reports.</li>
-                                    <li>Monitor system health and adoption metrics.</li>
                                 </ul>
                             </div>
                             <div class="role-visual">
@@ -310,13 +308,13 @@
 
                         <div class="role-content" id="officer">
                             <div class="role-details">
-                                <h3>Officer / Controller Dashboard</h3>
+                                <h3>Officer Dashboard</h3>
                                 <p>The central command for block approval and coordination.</p>
                                 <ul>
                                     <li>Review, approve, or reject block requests in real-time.</li>
                                     <li>Monitor active blocks across their jurisdiction.</li>
                                     <li>Coordinate complex multi-station track maintenance.</li>
-                                    <li>Receive instant alerts for prolonged or critical blocks.</li>
+                                    <li>Check the progress reports to analyze the efficiency and productivity.</li>
                                 </ul>
                             </div>
                             <div class="role-visual">
@@ -333,12 +331,13 @@
 
                         <div class="role-content" id="cabin">
                             <div class="role-details">
-                                <h3>Cabin / Station Master Interface</h3>
+                                <h3>Cabin Holders Interface</h3>
                                 <p>Streamlined execution point for local operations.</p>
                                 <ul>
-                                    <li>Initiate block requests with precise track details.</li>
                                     <li>Acknowledge approvals and confirm field readiness.</li>
-                                    <li>Manage local track occupation status.</li>
+                                    <li>Provide extension to approved blocks.</li>
+                                    <li>Reject block with appropriate reason.</li>
+                                    <li>Check the Block details thoroughly.</li>
                                     <li>Communicate block closure and track normalization.</li>
                                 </ul>
                             </div>
@@ -359,6 +358,7 @@
                                 <h3>Field View</h3>
                                 <p>On-ground visibility for maintenance staff and engineers.</p>
                                 <ul>
+                                    <li>Initiate block requests with precise track details.</li>
                                     <li>Mobile-optimized view of block statuses.</li>
                                     <li>Verify block approvals before commencing track work.</li>
                                     <li>Read-only access to prevent unauthorized changes.</li>
@@ -406,7 +406,7 @@
     <footer>
         <div class="container footer-container">
             <div class="footer-logo">
-                <div class="logo-icon small"></div>
+                <img src="https://jazfysafnhxztgnphfqv.supabase.co/storage/v1/object/public/Assets/RailBlock.ico" alt="RailBlock Icon" style="width: 32px; height: 32px; data-import="true"">
                 <span>RailBlock Control</span>
             </div>
             <p class="copyright">&copy; 2026 Railway Block Management System. Proprietary and Confidential.</p>
