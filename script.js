@@ -1,6 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
+Document.addEventListener('DOMContentLoaded', () => {
     
+    // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
 
     // Scroll Reveal Animations
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
@@ -12,14 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
                 entry.target.classList.add('active');
                 observer.unobserve(entry.target);
             }
         });
     }, revealOptions);
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
+    });
 
     // Role Tabs Switching Logic
     const roleTabs = document.querySelectorAll('.role-tab');
@@ -27,10 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     roleTabs.forEach(tab => {
         tab.addEventListener('click', () => {
+            // Remove active class from all tabs and contents
             roleTabs.forEach(t => t.classList.remove('active'));
             roleContents.forEach(c => c.classList.remove('active'));
 
+            // Add active class to clicked tab
             tab.classList.add('active');
+
+            // Show corresponding content
             const targetId = tab.getAttribute('data-target');
             document.getElementById(targetId).classList.add('active');
         });
@@ -61,7 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            if (window.pageYOffset >= (sectionTop - navbar.offsetHeight - 120)) {
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - navbar.offsetHeight - 100)) {
                 current = section.getAttribute('id');
             }
         });
