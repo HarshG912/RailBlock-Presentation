@@ -1,4 +1,4 @@
-Document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
